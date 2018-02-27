@@ -68,9 +68,11 @@ server, visit https://ripple.com/build/rippled-setup/
   $ sudo make install  
   $ sudo ldconfig  
 - **安装其他依赖**  
+  $ sudo apt install openssl
   $ sudo apt install pkg-config  
   $ sudo apt install scons  
 - **编译**  
+  $ sudo apt install git
   $ git clone https://gitlab.com/ledgerd/ledgerd.git  
   $ cd ledgerd  
   $ sudo scons  
