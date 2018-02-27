@@ -56,7 +56,7 @@ server, visit https://ripple.com/build/rippled-setup/
 
 ## Build
 - **安装boost**  
-  $ sudo apt install boost-all-dev
+  $ sudo apt install libboost-all-dev
 - **安装protobuf**  
   $ sudo apt-get install autoconf automake libtool curl make g++ unzip  
   $ wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz  
