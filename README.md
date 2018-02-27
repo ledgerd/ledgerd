@@ -69,6 +69,7 @@ server, visit https://ripple.com/build/rippled-setup/
   $ sudo ldconfig  
 - **安装其他依赖**  
   $ sudo apt install openssl
+  $ sudo apt install libssl-dev
   $ sudo apt install pkg-config  
   $ sudo apt install scons  
 - **编译**  
