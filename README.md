@@ -71,6 +71,8 @@ server, visit https://ripple.com/build/rippled-setup/
   $ sudo apt install pkg-config  
   $ sudo apt install scons  
 - **编译**  
+  $ git clone https://gitlab.com/ledgerd/ledgerd.git
+  $ cd ledgerd
   $ sudo scons
 
 [![travis-ci.org: Build Status](https://travis-ci.org/ripple/rippled.png?branch=develop)](https://travis-ci.org/ripple/rippled)
