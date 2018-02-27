@@ -62,18 +62,18 @@ server, visit https://ripple.com/build/rippled-setup/
   $ wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz  
   $ tar -xzvf protobuf-all-3.5.1.tar.gz  
   $ cd protobuf-3.5.1  
-  $ ./configure  
+  $ ./configure --prefix=/usr  
   $ make  
   $ make check  
   $ sudo make install  
   $ sudo ldconfig  
 - **安装其他依赖**  
-  $ sudo apt install openssl
-  $ sudo apt install libssl-dev
+  $ sudo apt install openssl  
+  $ sudo apt install libssl-dev  
   $ sudo apt install pkg-config  
   $ sudo apt install scons  
 - **编译**  
-  $ sudo apt install git
+  $ sudo apt install git  
   $ git clone https://gitlab.com/ledgerd/ledgerd.git  
   $ cd ledgerd  
   $ sudo scons  
