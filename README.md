@@ -54,6 +54,25 @@ costs, and ultimately, offer more competitive FX pricing.
 protocol. To learn more about how to build and run a `rippled`
 server, visit https://ripple.com/build/rippled-setup/
 
+## Build
+- **安装boost**  
+  $ sudo apt install boost-all-dev
+- **安装protobuf**  
+  $ sudo apt-get install autoconf automake libtool curl make g++ unzip  
+  $ wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz  
+  $ tar -xzvf protobuf-all-3.5.1.tar.gz  
+  $ cd protobuf-3.5.1  
+  $ ./configure  
+  $ make  
+  $ make check  
+  $ sudo make install  
+  $ sudo ldconfig  
+- **安装其他依赖**  
+  $ sudo apt install pkg-config  
+  $ sudo apt install scons  
+- **编译**  
+  $ sudo scons
+
 [![travis-ci.org: Build Status](https://travis-ci.org/ripple/rippled.png?branch=develop)](https://travis-ci.org/ripple/rippled)
 [![codecov.io: Code Coverage](https://codecov.io/gh/ripple/rippled/branch/develop/graph/badge.svg)](https://codecov.io/gh/ripple/rippled)
 
