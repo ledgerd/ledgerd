@@ -1,63 +1,13 @@
-![Ripple](/images/ripple.png)
 
-**Do you work at a digital asset exchange or wallet provider?** 
-
-Please [contact us](mailto:support@ripple.com). We can help guide your integration.
-
-# What is Ripple?
-Ripple is a network of computers which use the [Ripple consensus algorithm](https://www.youtube.com/watch?v=pj1QVb1vlC0) to atomically settle and record
-transactions on a secure distributed database, the Ripple Consensus Ledger
-(RCL). Because of its distributed nature, the RCL offers transaction immutability
-without a central operator. The RCL contains a built-in currency exchange and its
-path-finding algorithm finds competitive exchange rates across order books
-and currency pairs.
-
-### Key Features
-- **Distributed**
-  - Direct account-to-account settlement with no central operator
-  - Decentralized global market for competitive FX
-- **Secure**
-  - Transactions are cryptographically signed using ECDSA or Ed25519
-  - Multi-signing capabilities
-- **Scalable**
-  - Capacity to process the world’s cross-border payments volume
-  - Easy access to liquidity through a competitive FX marketplace
-
-## Cross-border payments
-Ripple enables banks to settle cross-border payments in real-time, with
-end-to-end transparency, and at lower costs. Banks can provide liquidity
-for FX themselves or source it from third parties.
-
-As Ripple adoption grows, so do the number of currencies and counterparties.
-Liquidity providers need to maintain accounts with each counterparty for
-each currency – a capital- and time-intensive endeavor that spreads liquidity
-thin. Further, some transactions, such as exotic currency trades, will require
-multiple trading parties, who each layer costs to the transaction. Thin
-liquidity and many intermediary trading parties make competitive pricing
-challenging.
-
-![Flow - Direct](images/flow1.png)
-
-### XRP as a Bridge Currency
-Ripple can bridge even exotic currency pairs directly through XRP. Similar to
-USD in today’s currency market, XRP allows liquidity providers to focus on
-offering competitive FX rates on fewer pairs and adding depth to order books.
-Unlike USD, trading through XRP does not require bank accounts, service fees,
-counterparty risk, or additional operational costs. By using XRP, liquidity
-providers can specialize in certain currency corridors, reduce operational
-costs, and ultimately, offer more competitive FX pricing.
-
-![Flow - Bridged over XRP](images/flow2.png)
-
-# rippled - Ripple server
-`rippled` is the reference server implementation of the Ripple
-protocol. To learn more about how to build and run a `rippled`
-server, visit https://ripple.com/build/rippled-setup/
+# ledgerd - LedgerD server
+`ledgerd` is the reference server implementation of the LedgerD
+protocol. To learn more about how to build and run a `ledgerd`
+server, visit https://ledgerd.org/build/ledgerd-setup/
 
 ## Build
-- **安装boost**  
+- **install boost**  
   $ sudo apt install libboost-all-dev
-- **安装protobuf**  
+- **install protobuf**  
   $ sudo apt-get install autoconf automake libtool curl make g++ unzip  
   $ wget https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz  
   $ tar -xzvf protobuf-all-3.5.1.tar.gz  
@@ -67,12 +17,12 @@ server, visit https://ripple.com/build/rippled-setup/
   $ make check  
   $ sudo make install  
   $ sudo ldconfig  
-- **安装其他依赖**  
+- **install other deps**  
   $ sudo apt install openssl  
   $ sudo apt install libssl-dev  
   $ sudo apt install pkg-config  
   $ sudo apt install scons  
-- **编译**  
+- **compile**  
   $ sudo apt install git  
   $ git clone https://gitlab.com/ledgerd/ledgerd.git  
   $ cd ledgerd  
@@ -82,7 +32,7 @@ server, visit https://ripple.com/build/rippled-setup/
 [![codecov.io: Code Coverage](https://codecov.io/gh/ripple/rippled/branch/develop/graph/badge.svg)](https://codecov.io/gh/ripple/rippled)
 
 ### License
-`rippled` is open source and permissively licensed under the
+`ledgerd` is open source and permissively licensed under the
 ISC license. See the LICENSE file for more details.
 
 #### Repository Contents
@@ -98,21 +48,3 @@ ISC license. See the LICENSE file for more details.
 Some of the directories under `src` are external repositories inlined via
 git-subtree. See the corresponding README for more details.
 
-## For more information:
-
-* [Ripple Knowledge Center](https://ripple.com/learn/)
-* [Ripple Developer Center](https://ripple.com/build/)
-* Ripple Whitepapers & Reports
-  * [Ripple Consensus Whitepaper](https://ripple.com/files/ripple_consensus_whitepaper.pdf)
-  * [Ripple Solutions Guide](https://ripple.com/files/ripple_solutions_guide.pdf)
-
-To learn about how Ripple is transforming global payments visit
-[https://ripple.com/contact/](https://ripple.com/contact/)
-
-- - -
-
-Copyright © 2017, Ripple Labs. All rights reserved.
-
-Portions of this document, including but not limited to the Ripple logo,
-images and image templates are the property of Ripple Labs and cannot be
-copied or used without permission.
