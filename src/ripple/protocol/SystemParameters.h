@@ -39,7 +39,7 @@ systemName ()
 /** Configure the native currency. */
 static
 std::uint64_t const
-SYSTEM_CURRENCY_GIFT = 100;
+SYSTEM_CURRENCY_GIFT = 10;
 
 static
 std::uint64_t const
